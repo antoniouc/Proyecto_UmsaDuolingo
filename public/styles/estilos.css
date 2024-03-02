@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffff;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color:  #f2f2f700;
+}
+
+li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.container {
+    display: flex; /* Usamos display flex para permitir el centrado */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    height: 100vh; /* Opcional: ajusta la altura según tus necesidades */
+  }
+
+/* #btnEmpezar{
+    width: 45vh;
+    position: absolute;
+    margin-left: 60%;
+ background-color: #58CC02;
+ color: white;
+ font-size: 20px;
+height: 100px;
+border: none ;
+border-radius: 10px;
+height : 50px;
+box-shadow: #1e350c;
+} */
+
+nav {
+  background-color: #fef7f7;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px 20px;
+  z-index: 999;
+  position: fixed;
+  border-bottom: 1px solid #b4b3b3;
+  display: flex;
+  justify-content: left; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
