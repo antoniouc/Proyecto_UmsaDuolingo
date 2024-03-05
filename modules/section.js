@@ -1,21 +1,14 @@
-//crearemos una funcion que crea un section
-// Módulo para crear una sección con estilos CSS
-export function CrearSeccion() {
-  // Crear un elemento <section>
-  const sectionElement = document.createElement("section");
+// Creamos la nueva funcion para crear el elemnto section
+export function CrearSeccion(elementos, styles, id) {
+  const section = document.createElement("section");
+section.id = id;
+  // Agregar estilos al elemento section
+  Object.assign(section.style, styles);
 
-  // Agregar contenido al elemento (puedes modificar esto según tus necesidades)
-  const h1 = document.createElement("h1");
-  h1.textContent = "Esta es la Sección";
-  sectionElement.appendChild(h1);
-  // Agregar estilos CSS al elemento
-  sectionElement.style.width = "100%";
-  sectionElement.style.marginTop = "95px";
-  sectionElement.style.height = "88vh";
-  sectionElement.style.backgroundColor = "#f0f0f0f0";
+  // Agregar los elementos HTML al section mediante un foreach
+  elementos.forEach((elemento) => {
+    section.appendChild(elemento);
+  });
 
-  // Agregar la sección al documento (puedes cambiar el selector según tu estructura HTML)
-  return sectionElement;
+  return section;
 }
-
-// Llamar a la función para crear la sección
